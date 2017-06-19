@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bidgame</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/lib/sweetalert2.min.css' />
+  </head>
+  <body ng-app="bidApp" ng-controller="bidCtrl">
+    <div class="main" ng-show="showPage">
+      <playerstat name="playerInfo"></playerstat>
+      <inventory name="inventoryInfo"></inventory>
+      <auction name="auctionInfo"></auction>
+    </div>
+  </body>
+<script src="/javascripts/lib/angular.min.js"></script>
+<script src="/javascripts/lib/sweetalert2.min.js"></script>
+<script src="/javascripts/controller.js"></script>
+</html>
